@@ -1,0 +1,74 @@
+{
+  "name": "create-gasless-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test-react": "react-scripts test",
+    "eject-react": "react-scripts eject",
+    "format": "prettier --write '*/**/*.*{js,sol,json,md,ts}'",
+    "format:check": "prettier --check '*/**/*.*{js,sol,json,md,ts}'",
+    "lint": "eslint --cache . && yarn lint:sol",
+    "lint:ts": "eslint -c .eslintrc.json --ext \"**/*.ts\" \"**/*.test.ts\""
+  },
+  "dependencies": {
+    "@material-tailwind/react": "^2.0.1",
+    "@tsconfig/recommended": "^1.0.2",
+    "@typechain/ethers-v5": "^10.2.0",
+    "@typechain/hardhat": "^6.1.5",
+    "@types/node": "^18.11.18",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@types/react-router": "^5.1.20",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "confetti-explosion-react": "^0.1.2",
+    "daisyui": "^2.46.1",
+    "dotenv": "^16.0.2",
+    "eslint": "^8.33.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "hardhat": "^2.12.6",
+    "install": "^0.13.0",
+    "prettier": "^2.8.3",
+    "prettier-plugin-solidity": "^1.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "^5.0.1",
+    "solhint": "^3.3.8",
+    "solhint-plugin-prettier": "^0.0.5",
+    "tailwindcss": "^3.2.4",
+    "ts-node": "^10.9.1",
+    "tw-elements": "^1.0.0-beta2",
+    "typechain": "^8.1.1",
+    "typescript": "^4.9.4"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "npm:hardhat-deploy-ethers@^0.3.0-beta.13",
+    "@nomiclabs/hardhat-etherscan": "^3.1.6",
+    "autoprefixer": "^10.4.14",
+    "ethers": "^5.7.2",
+    "hardhat-deploy": "^0.11.25",
+    "postcss": "^8.4.23"
+  }
+}

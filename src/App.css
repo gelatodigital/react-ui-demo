@@ -1,0 +1,130 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+
+@media (max-width: 37.5em) {
+.logo-navbar a {
+    padding: unset;
+  }
+
+}
+
+@media (max-width: 37.5em) {
+.logo-navbar a svg {
+
+
+    transform: scale(0.9);
+  }
+
+}
+
+.contact-us {
+  display: block;
+
+
+}
+
+@media screen and (max-width: 37.5em) {
+  .contact-us {
+    text-align: center;
+    display: none
+  }
+}
+
+.connect button {
+  color: black;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 37.5em) {
+  .connect button {
+    font-size: 12px;
+    position: relative;
+    /* right: 10px; */
+    /* margin-left: 15px; */
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .frame {
+    margin: 15px;
+  }
+}
+
+@media screen and (max-width: 37.5em) {
+  .frame2 {
+
+    padding: 20px;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bg-slate-600 {
+  background: #202020
+ }
+ .bg-base-100 {
+  --tw-bg-opacity: 1;
+  background-color: #000000
+}
+
+.bg-connect-button
+{
+  background-color: #ff928f;
+  color: black;
+}
+.btn-active, .btn:hover {
+  background-color: #55390b;
+  color: white;
+}
+
+.btn-primary{
+  background-color: #ff928f;
+  color: black;
+  border-color:unset
+}
+
+.btn-primary:hover{
+  background-color: #55390b;
+  color: white;
+}
+
+.btn-disabled , .btn[disabled]{
+  background-color: lightgray;
+  color: darkgrey
+}
